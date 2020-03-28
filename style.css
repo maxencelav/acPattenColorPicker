@@ -8,33 +8,50 @@
 
 body {
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #f0ecd6;
 
 }
 
 #interface {
-
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 
-    color: white;
-    background-color: rgb(145, 99, 99);
-    padding: 1em;
 }
 
+/* Contains the circle with the text input*/
 #color-picker {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    color: white;
+    background-color: #897865;
+    padding: 1em;
+
+    -webkit-box-shadow: 0px 9px 15px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 9px 15px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 15px -8px rgba(0, 0, 0, 0.75);
 }
 
+/* Block that contains the current color */
 #color-viewer {
     background-color: white;
     width: 9em;
     height: 3em;
     border-radius: 1em;
-    
+    border: 3px solid #897865;
+    margin: 0 auto;
+
+}
+
+#color-result {
+    height: 95%;
+    background-color: #febdc5;
+    color: #634e3e;
+    border-radius: 0px 3em 3em 0px;
+    padding: 1em;
 }
 
 form {
@@ -42,10 +59,7 @@ form {
 }
 
 #rgb-color {
-
-    font-size: large;
-
-
+    font-size: large
 }
 
 
@@ -54,7 +68,7 @@ input[type="text"] {
     background-color: #fbfdef;
     border-radius: 1em;
     font-weight: bold;
-    color: #69584a;
+    color: #897865;
     padding: 0.5em;
     border: 0ch;
     font-size: large;
