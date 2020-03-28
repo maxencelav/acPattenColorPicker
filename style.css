@@ -54,6 +54,69 @@ body {
     padding: 1em;
 }
 
+#color-preview {
+    width: 100%;
+    text-align: center;
+
+}
+
+#color-preview .preview-container {
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+
+    font-size: x-large;
+    font-weight: 900;
+    text-align: center;
+}
+
+#color-preview .preview-container p {
+    margin: 0.5em;
+
+}
+
+#hue-preview {
+    display: inline-block;
+}
+
+.selector {
+    display: block;
+    margin: 0em;
+
+    position: relative;
+    
+    
+
+    width: 2em;
+    height: 2em;
+
+    z-index: 100;
+
+    filter: drop-shadow(0 0 0.05rem white);
+
+}
+
+#hue-preview .selector {
+    top: 1em;
+    left: -0.6em;
+}
+
+#viv-preview .selector {
+    top: 1em;
+    left: -0.3em;
+}
+
+#bri-preview .selector {
+    top: 1em;
+    left: -0.3em;
+}
+
+
+
 form {
     margin: 1em;
 }
