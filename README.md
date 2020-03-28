@@ -1,1 +1,1 @@
-# acPattenColorPicker
+# acPatternColorPicker
