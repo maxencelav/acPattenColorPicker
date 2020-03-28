@@ -31,10 +31,11 @@ var colorPicker = new iro.ColorPicker('#picker', {
 });
 
 
-
+updateColorsLive();
+updateColorsIngame();
 
 colorPicker.on('color:change', function (color) {
-  console.log(colorPicker.color.hsl);
+
   updateColorsLive();
   updateColorsIngame();
 
@@ -44,6 +45,9 @@ function updateColorsLive() {
   document.getElementById("hue-live").innerHTML = colorPicker.color.hsl["h"];
   document.getElementById("viv-live").innerHTML = colorPicker.color.hsl["s"];
   document.getElementById("bri-live").innerHTML = colorPicker.color.hsl["l"];
+  document.getElementById("rgb-color").value = colorPicker.color.hexString;
+
+  
 
 }
 
