@@ -22,9 +22,7 @@ body {
 }
 
 #color-result{
-
-
-    width: 20em;
+    width: fit-content;
     text-align: left;
     font-size: large;
 }

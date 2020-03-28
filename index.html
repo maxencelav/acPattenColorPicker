@@ -12,12 +12,16 @@
 <body>
     <h1>Animal Crossing Color Picker</h1>
     <div id="interface">
-        <div id="picker"></div>
+        <div>
+            <div id="picker"></div><br>
+            <input type="text" id="rgb-color">
+        </div>
+
         <div id="color-result">
             <h2>Colors</h2>
             <ul>
                 <li>Hue: <span id="hue-live"></span> -> ingame: <span id="hue-ing"></span></li>
-                <li>Vividness: <span id="viv-live"></span> -> ingame: <span id="viv-ing"></span></li>
+                <li>Vividness (Saturation): <span id="viv-live"></span> -> ingame: <span id="viv-ing"></span></li>
                 <li>Brightness: <span id="bri-live"></span> -> ingame: <span id="bri-ing"></span></li>
             </ul>
         </div>

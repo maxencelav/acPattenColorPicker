@@ -31,6 +31,8 @@ var colorPicker = new iro.ColorPicker('#picker', {
 });
 
 
+
+
 colorPicker.on('color:change', function (color) {
   console.log(colorPicker.color.hsl);
   updateColorsLive();
@@ -46,8 +48,8 @@ function updateColorsLive() {
 }
 
 function updateColorsIngame() {
-  document.getElementById("hue-ing").innerHTML = Math.floor(colorPicker.color.hsl["h"]/ 30);
-  document.getElementById("viv-ing").innerHTML = Math.floor(colorPicker.color.hsl["s"]/15);
-  document.getElementById("bri-ing").innerHTML = Math.floor(colorPicker.color.hsl["l"]/15);
+  document.getElementById("hue-ing").innerHTML = Math.floor((colorPicker.color.hsl["h"]*30)/360);
+  document.getElementById("viv-ing").innerHTML = Math.floor((colorPicker.color.hsl["s"]*15)/100);
+  document.getElementById("bri-ing").innerHTML = Math.floor((colorPicker.color.hsl["l"]*15)/100);
 
 }
