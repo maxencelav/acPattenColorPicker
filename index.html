@@ -14,15 +14,18 @@
     <div id="interface">
         <div>
             <div id="picker"></div><br>
-            <input type="text" id="rgb-color">
+            <form onsubmit="return false">
+                <input type="text" id="rgb-color" maxlength="7">
+                <input type="submit" onclick="update();">
+            </form>
         </div>
 
         <div id="color-result">
             <h2>Colors you picked</h2>
             <ul>
                 <li>Hue: <span id="hue-live"></span></li>
-                <li>Saturation: <span id="viv-live"></span></li>
-                <li>Lightness: <span id="bri-live"></span></li>
+                <li>Saturation: <span id="sat-live"></span></li>
+                <li>Lightness: <span id="lig-live"></span></li>
             </ul>
 
             <h2>In-game Colors</h2>

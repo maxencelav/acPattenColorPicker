@@ -3,7 +3,7 @@
 * {
     font-family: 'M PLUS Rounded 1c', sans-serif;
     -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -23,8 +23,8 @@ body {
     padding: 1em;
 }
 
-#color-result{
-    width: fit-content;
+#color-result {
+    /*width: fit-content;*/
     text-align: left;
     font-size: large;
 }
