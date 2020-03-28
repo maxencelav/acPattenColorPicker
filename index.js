@@ -64,9 +64,13 @@ function updateColorsLive() {
   let lig = colorPicker.color.hsl["l"];
 
   document.getElementById("hue-live").innerHTML = pad(hue, 3);
-  document.getElementById("sat-live").innerHTML = pad(sat, 3);
-  document.getElementById("lig-live").innerHTML = pad(lig, 3);
+  document.getElementById("sat-live").innerHTML = sat + "%";
+  document.getElementById("lig-live").innerHTML = lig + "%";
   document.getElementById("rgb-color").value = colorPicker.color.hexString;
+  document.getElementById("color-viewer").style.backgroundColor = document.getElementById("rgb-color").value;
+
+
+
 
 
 

@@ -19,23 +19,24 @@
 <body>
     <h1>Animal Crossing Color Picker</h1>
     <div id="interface">
-        <div>
+        <div id="color-picker">
             <div id="picker"></div><br>
             <form onsubmit="return false">
                 <input type="text" id="rgb-color" maxlength="7">
-                <input type="submit" onclick="update();">
+                <input type="submit" onclick="update();" value="Done">
             </form>
         </div>
 
         <div id="color-result">
-            <h2>Colors you picked</h2>
+            <h2>Color you picked</h2>
+            <div id="color-viewer"></div>
             <ul>
                 <li>Hue: <span id="hue-live"></span></li>
                 <li>Saturation: <span id="sat-live"></span></li>
                 <li>Lightness: <span id="lig-live"></span></li>
             </ul>
 
-            <h2>In-game Colors</h2>
+            <h2>In-game Result</h2>
             <ul>
                 <li>Hue: <span id="hue-ing"></span></li>
                 <li>Vividness: <span id="viv-ing"></span></li>

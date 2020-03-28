@@ -23,6 +23,58 @@ body {
     padding: 1em;
 }
 
+#color-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#color-viewer {
+    background-color: white;
+    width: 9em;
+    height: 3em;
+    border-radius: 1em;
+    
+}
+
+form {
+    margin: 1em;
+}
+
+#rgb-color {
+
+    font-size: large;
+
+
+}
+
+
+input[type="text"] {
+
+    background-color: #fbfdef;
+    border-radius: 1em;
+    font-weight: bold;
+    color: #69584a;
+    padding: 0.5em;
+    border: 0ch;
+    font-size: large;
+    width: 60%;
+
+}
+
+input[type="submit"] {
+
+    background-color: rgb(28, 149, 165);
+    border-radius: 1em;
+    font-weight: bold;
+    color: white;
+    padding: 0.5em;
+    border: 0ch;
+    font-size: large;
+
+}
+
+
 #color-result {
     /*width: fit-content;*/
     text-align: left;
